@@ -1,5 +1,7 @@
 import os, os.path, sys, json, pexpect
 
+# TODO: install python dependency automaticly to MCP Server Venv
+
 print("@ Init")
 
 cwd = os.getcwd()
