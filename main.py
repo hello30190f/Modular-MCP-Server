@@ -37,7 +37,6 @@ def waitForever(session:pexpect.spawn) -> None:
 
 
 
-result = parse.parse_args()
 
 cwd = os.getcwd()
 print("Please make sure working directory is correct.")
@@ -60,6 +59,17 @@ MCPserverSession.logfile    = sys.stdout
 pexpectExecuteCommand(MCPserverSession,"source {}".format(pythonVenvActivate))
 pexpectExecuteCommand(MCPserverSession,"cd {}".format(cwd))
 pexpectExecuteCommand(MCPserverSession,"pip install -r requirements.txt; pip list",expect="-------------------------")
+
+
+
+
+
+
+
+
+
+
+result = parse.parse_args()
 
 if result.loadScript and result.startServer:
     print("Please do not specify mutiple option at once.")

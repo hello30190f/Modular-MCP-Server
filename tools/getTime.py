@@ -1,6 +1,5 @@
-# tools.py
 from datetime import datetime
-from server import mcp  # 作成したインスタンスをインポート
+from server import mcp
 
 @mcp.tool()
 def get_current_time() -> str:
