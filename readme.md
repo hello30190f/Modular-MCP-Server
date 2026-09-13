@@ -36,7 +36,7 @@ python main.py --startServer
 
 
 
-## template
+## Template
 　This template shuold be located at specified toolsPath.
 ```py
 from server import mcp  
