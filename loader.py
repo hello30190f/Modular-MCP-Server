@@ -1,6 +1,10 @@
 import os, os.path, sys, json, pexpect
 
 # TODO: install python dependency automaticly to MCP Server Venv
+print("@ Loading Started ---------------")
+print("@ Loading Started ---------------")
+print("@ Loading Started ---------------")
+print("@ Loading Started ---------------")
 
 print("@ Init")
 
