@@ -1,5 +1,5 @@
 # MCP Server
- This is an Modular MCP Server. Whatever you want can be added by adding scripts with following template. The scripts are searched recursively by the loader.
+ This is an Modular MCP Server. Whatever you want can be added by adding scripts with following template. The scripts are searched recursively by the loader so you can place script anywhere within the `toolsPath`.
 
 ## Prepare
 ### install dependency
@@ -26,9 +26,14 @@ def hello_world(name: str) -> str:
 ```
 
 ### start loader
+```bash
+python main.py --loadScript
+```
+### start server
+```bash
+python main.py --startServer
 ```
 
-```
 
 
 ## template
