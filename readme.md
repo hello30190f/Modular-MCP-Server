@@ -17,9 +17,9 @@ pip install -r requirements.txt
 
 ### place your scripts and dependency (requirements.txt)
 ```py
-from server import mcp  
+from server import instance  
 
-@mcp.tool()
+@instance.tool()
 def hello_world(name: str) -> str:
     """挨拶を返します。"""
     return f"こんにちは、{name}さん！"
@@ -39,9 +39,9 @@ python main.py --startServer
 ## Template
 　This template shuold be located at specified toolsPath.
 ```py
-from server import mcp  
+from server import instance  
 
-@mcp.tool()
+@instance.tool()
 def hello_world(name: str) -> str:
     """挨拶を返します。"""
     return f"こんにちは、{name}さん！"
