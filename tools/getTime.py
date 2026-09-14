@@ -1,7 +1,7 @@
 from datetime import datetime
 from server import instance
 
-@mcp.tool()
+@instance.tool()
 def get_current_time() -> str:
     """現在の正確な日付と時刻を取得します。"""
     now = datetime.now()
