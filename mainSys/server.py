@@ -1,2 +1,2 @@
 from fastmcp import FastMCP
-mcp = FastMCP("TimeServer")
+instance = FastMCP("Modular-MCP-Server")

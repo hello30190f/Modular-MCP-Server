@@ -1,5 +1,5 @@
-from server import mcp
+from server import instance
 import runtime
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", host="0.0.0.0", port=8000)
+    instance.run(transport="sse", host="0.0.0.0", port=8000)
