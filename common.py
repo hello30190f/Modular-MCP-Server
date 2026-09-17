@@ -31,4 +31,5 @@ def waitForever(session:pexpect.spawn) -> None:
         print("The MCPServer will shutdown.")
         sys.exit(0)
     except pexpect.exceptions.TIMEOUT:
+        print("This is bug. Please start this server again")
         pass
