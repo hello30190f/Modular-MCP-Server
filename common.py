@@ -22,10 +22,13 @@ def pexpectForceUpdate(session:pexpect.spawn) -> None:
 
 def waitForever(session:pexpect.spawn) -> None:
     try:
-        session.wait()
-        # while True:
-        #     pexpectForceUpdate(session)
-        #     # time.sleep(0.2) 
+        while True:
+            session.flush()
+            session.read_nonblocking(size=100,timeout=None)
+            # pexpectForceUpdate(session)
+            time.sleep(0.2) 
     except KeyboardInterrupt:
         print("The MCPServer will shutdown.")
         sys.exit(0)
+    except pexpect.exceptions.TIMEOUT:
+        pass
