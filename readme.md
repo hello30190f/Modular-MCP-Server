@@ -37,7 +37,7 @@ python main.py --startServer
 
 
 ## Template
-　This template shuold be located at specified toolsPath.
+　This template should be located at specified toolsPath.
 ```py
 from server import instance  
 
