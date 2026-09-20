@@ -7,7 +7,7 @@
 pip install -r requirements.txt
 ```
 
-### write your settings at `settings.json`
+### write your settings as `settings.json`
 ```json
 {
     "toolsPath": "",
@@ -55,7 +55,7 @@ def hello_world(name: str) -> str:
 }
 ```
 ### toolsPath
- You can specifiy where tools script are stored by absolute path.
+ You can specify where tools script are stored by absolute path.
 ### useDefaultToolPath
  You can make this MCP server resolve toolsPath. The default path is `./tools/` when consider the root as this MCP server (where `loader.py` is placed).
 
